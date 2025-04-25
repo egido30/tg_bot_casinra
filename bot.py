@@ -22,8 +22,18 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_photo(
         chat_id=chat_id,
         photo=photo_url,
-        caption = '🔐 Casinra’ya Hoş Geldin! \n Hızlı, güvenli ve kazanç dolu bir deneyim seni bekliyor! \n\n🎁 Sadece Bugüne Özel Fırsatlar: \n⚡ %20 Kayıp Bonusu \n🎁 100 TL Deneme Bonusu\n🤝 %100 Hoşgeldin Bonusu\n🤞🏻 %50’ye Varan Rakeback İmkanı\n\n📱 Hemen Casinra’ya Giriş Yap, Fırsatları Kaçırma!\n\n🍀 Bota özel sürpriz bonuslar ve özel porsiyonlar için takipte kal!',
-        reply_markup=reply_markup
+    caption = '🔐 <b>CASİNRA’YA HOŞ GELDİN!</b>\n'
+              'Hızlı ve güvenli işlem ayrıcalığını keşfet!\n\n'
+              '✨ <b>Sadece Sana Özel Fırsatlar:</b>\n'
+              '⚡ %100 Happy Hour Bonusu\n'
+              '🎁 100 TL Deneme Bonusu\n'
+              '👑 VIP Seviye Atlama Bonusu\n'
+              '🎰 %20 Anlık Discount\n\n'
+              '🔥 VE DAHA FAZLASI SENİ BEKLİYOR!\n\n'
+              '📲 <a href="https://csnr.site/MHHaD">Hemen Giriş Yap: CASİNRA GİRİŞ</a>\n\n'
+              '🎉 Bota özel sürprizler ve özel porsiyonlar için takipte kal!',
+    parse_mode='HTML',
+    reply_markup=reply_markup
     )
 
 if __name__ == '__main__':
